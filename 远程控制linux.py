@@ -24,7 +24,7 @@ stdin,stdout,stderr = ssh.exec_command("less cd /home/logs/domain.log.2020-10-15
 # print(stdout.read().decode("utf8"))
 newStr = stdout.read().decode("utf8")
 
-with open("./a.txt","w",encoding="utf-8") as f:
+with open("./b.txt","w",encoding="utf-8") as f:
     f.write(newStr)
 # print(stderr.read())
 # stdin,stdout,stderr = ssh.exec_command("pwd")
